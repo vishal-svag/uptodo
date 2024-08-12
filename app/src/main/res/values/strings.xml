@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Uptodo</string>
+    <string name="index">Index</string>
+    <string name="what_do_you_want_to_do_today">What do you want to do today?</string>
+    <string name="tap_to_add_your_tasks">Tap + to add your tasks</string>
+    <string name="add_task">Add Task</string>
+    <string name="task_title">Task Title</string>
+    <string name="description">Description</string>
+    <string name="task_priority">Task Priority</string>
+        <string-array name="sort_options">
+            <item>Sort by Title</item>
+            <item>Sort by Date</item>
+            <item>Sort by Priority</item>
+        </string-array>
+
+</resources>

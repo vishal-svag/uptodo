@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="16dp"
+    tools:context=".TaskDetail">
+
+    <ImageView
+        android:id="@+id/close_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:contentDescription="close"
+        android:src="@drawable/close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <ImageView
+        android:id="@+id/edit_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/cycle"
+        android:contentDescription="repeat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Task Title -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/close_icon" />
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Do Math Homework"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/close_icon" />
+
+
+    <!-- Task Description -->
+    <ImageButton
+        android:id="@+id/edit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/black"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/task_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:text="Do chapter 2 to 5 for next week"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/task_title" />
+
+    <!-- Task Time -->
+    <ImageView
+        android:id="@+id/time_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/timer"
+        android:contentDescription="task_time"
+        app:layout_constraintTop_toBottomOf="@id/task_description"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/timelbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Time:"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="@id/time_icon"
+        app:layout_constraintStart_toEndOf="@id/time_icon"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/task_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:background="@drawable/back"
+        android:text="Today At 16:45"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/time_icon" />
+
+    <!-- Task Category -->
+    <ImageView
+        android:id="@+id/category_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/tag"
+        android:contentDescription="task_category"
+        app:layout_constraintTop_toBottomOf="@id/time_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Task Category:"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/category_icon"
+        app:layout_constraintTop_toBottomOf="@+id/timelbl" />
+
+    <TextView
+        android:id="@+id/task_category_label"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:background="@drawable/back"
+        android:text="University"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/category_icon" />
+
+    <!-- Task Priority -->
+    <ImageView
+        android:id="@+id/priority_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/flag"
+        android:contentDescription="@string/task_priority"
+        app:layout_constraintTop_toBottomOf="@id/category_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/task_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Priority:"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="@id/priority_icon"
+        app:layout_constraintStart_toEndOf="@id/priority_icon"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/task_priority_label"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:background="@drawable/back"
+        android:text="Default"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/priority_icon" />
+
+    <!-- Sub-Task -->
+    <ImageView
+        android:id="@+id/subtask_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/hierarchy"
+        android:contentDescription="sub_task"
+        app:layout_constraintTop_toBottomOf="@id/priority_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/subtask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sub-Task:"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="@id/subtask_icon"
+        app:layout_constraintStart_toEndOf="@id/subtask_icon"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/subtask_label"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:text="Add Sub-Task"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/subtask_icon" />
+
+    <!-- Delete Task Button -->
+    <Button
+        android:id="@+id/btn_delete_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Task"
+        android:drawableLeft="@drawable/trash"
+        android:textColor="@android:color/holo_red_light"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintTop_toBottomOf="@id/subtask_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:id="@+id/SaveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Task"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:background="@drawable/edit_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

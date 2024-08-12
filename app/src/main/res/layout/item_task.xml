@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardBackgroundColor="#363636"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/circle"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="10dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/task_title"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/taskTitleTextView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskDateTimeTextView"
+            android:text="Today time"
+            android:textColor="#AFAFAF"
+            android:textSize="16sp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="40dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="220dp">
+
+        <TextView
+            android:id="@+id/taskCategoryTextView"
+            android:layout_width="70dp"
+            android:layout_height="29dp"
+            android:text="Category"
+            android:background="@drawable/category_backg"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp" />
+,
+            <LinearLayout
+                android:layout_width="42dp"
+                android:layout_height="29dp"
+                android:orientation="horizontal"
+                android:background="@drawable/priority_background">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/flag"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:text="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/priorityText"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

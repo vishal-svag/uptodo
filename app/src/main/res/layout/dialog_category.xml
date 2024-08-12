@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="327dp"
+    android:layout_height="556dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#363636"
+    android:layout_gravity="center">
+
+    <!-- Title for the dialog -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Category"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#979797" />
+
+    <!-- Grid of priority options -->
+    <GridLayout
+        android:id="@+id/gridCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:layout_marginTop="10dp"
+        android:alignmentMode="alignMargins"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center">
+
+        <!-- Repeat these blocks for each priority option (1 to 10) -->
+        <LinearLayout
+            android:id="@+id/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/grocery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grocery"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p2"
+            android:layout_marginStart="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/work" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/sports" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sports"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p4"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/design" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Design"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p5"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/university" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="University"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p6"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/social" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Social"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p7"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/music" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p8"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/health" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p9"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/movie" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p10"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <!-- Repeat similar blocks for options 2 to 10 -->
+
+    </GridLayout>
+
+    <!-- Cancel and Save buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/cancelButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Cancel"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="#8687E7"-->
+<!--            android:background="?android:attr/selectableItemBackgroundBorderless"/>-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Edit"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:background="#8687E7"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="16sp"-->
+<!--            android:id="@+id/editButton"/>-->
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
